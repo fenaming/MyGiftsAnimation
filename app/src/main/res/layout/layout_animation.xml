@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="38dp"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:id="@+id/animation_person_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:background="@drawable/bg_live_show_gifts"
+        android:layout_gravity="bottom">
+
+        <ImageView
+            android:id="@+id/gift_userheader_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:id="@+id/ll_gifts_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="35dp"
+            android:layout_toRightOf="@id/gift_userheader_iv"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/gift_usernickname_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxEms="6"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="可爱到膨胀..."
+                android:textColor="#ffffff"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/gift_usersign_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxEms="8"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="送一个爱心"
+                android:textColor="#FFF198"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/animation_gift"
+        android:layout_width="50dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="-33dp"
+        android:layout_toRightOf="@id/ll_gifts_tips"
+        android:background="#FF0000" />
+
+    <com.fenaming.mytest.view.StrokeTextView
+        android:id="@+id/animation_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_gravity="bottom"
+        android:text="x 1"
+        android:textColor="#FFCD00"
+        android:textSize="28dp" />
+
+</LinearLayout>
